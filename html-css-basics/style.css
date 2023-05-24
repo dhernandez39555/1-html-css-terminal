@@ -1,0 +1,67 @@
+/* CSS= language that defines styles and positioning of HTML through a ruleset via selector
+
+    Selector{
+    declaration of (below)
+    property: value;
+    property: value;
+    key: value;
+*/
+
+/*element ->selector<- down below*/
+
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* using id selector to find element */
+#nav-bar {
+    background-color: #006266;
+    color: white;   
+}
+/* using class selector to style element */
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: red;
+}
+
+.nav-link:focus {
+    color: blue;
+}
+
+.nav-link:active {
+    color: green;
+}
+/* wildcard selector for ANY element's proprties, unless we override */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ /* below is a compound selector */
+body > section > article img {
+    width: 50vw ;
+    height: 50vw ;
+}
+/* w3 schools and mdn are good manual directories for technical terms 
+like object-fit: cover; */
+
+/* order of specificity 
+    !Important <- Inline <- Id <- Class <- element
+ONLY FOR CSS SELECTORS */
+
+#order-of-specificity {
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+    background-color: purple;
+}
+
+
+
+.order-of-specificity {
+    background-color: blue;
+}
